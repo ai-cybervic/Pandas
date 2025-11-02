@@ -29,42 +29,57 @@ To install all dependencies, run:
 
 ```bash
 pip install streamlit pandas numpy
+```
 Or, if you have a requirements.txt file:
 
 bash
 Copy code
+```
 pip install -r requirements.txt
+```
 Setup Instructions
 1. Clone the Repository
 bash
 Copy code
-git clone https://github.com/<your-username>/<your-repository>.git
-cd <your-repository>
-2. Create a Virtual Environment
+```
+git clone https://github.com/ai-cybervic/Pandas.git
+cd Pandas
+```
+3. Create a Virtual Environment
 bash
 Copy code
+```
 python3 -m venv venv
 source venv/bin/activate   # On Linux or macOS
 # OR
 venv\Scripts\activate      # On Windows
+```
 3. Install Dependencies
 bash
 Copy code
+```
 pip install -r requirements.txt
+```
 If you don’t have a requirements file yet, generate one using:
 
 bash
 Copy code
+```
 pip freeze > requirements.txt
+```
 Running the Application
 bash
 Copy code
+```
 streamlit run test.py
+```
 Then open your browser and visit:
 
 arduino
 Copy code
+```
 http://localhost:8501
+```
 Usage
 Upload your dataset file (.csv, .xlsx, .xls, or .json)
 
@@ -79,6 +94,7 @@ Download the cleaned dataset
 Example Code Snippet
 python
 Copy code
+```
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -89,6 +105,7 @@ uploaded_file = st.file_uploader("Upload dataset", type=["csv", "xlsx", "xls", "
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
     st.dataframe(df.head())
+```
 Troubleshooting
 Error:
 pandas.errors.EmptyDataError: No columns to parse from file
@@ -120,23 +137,15 @@ plotly
 
 Author
 Vic
-Email: authkarimi1@gmail.com
+
+Email: 
+```
+authkarimi1@gmail.com
+```
 
 For data science or machine learning collaborations, contact the author via email.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-yaml
-Copy code
 
----
-
-Would you like me to generate the **MIT LICENSE** file text next (so your GitHub repo is complete)?
-
-
-
-
-
-
-You said:
